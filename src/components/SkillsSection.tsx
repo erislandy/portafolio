@@ -2,11 +2,14 @@
 
 import { motion } from 'motion/react'
 import { Card } from './ui/card'
+import { useLanguage } from '../hooks/useLanguage'
 
 export function SkillsSection() {
+  const { t } = useLanguage()
+
   const skillCategories = [
     {
-      title: 'Frontend',
+      title: t('skills.categories.frontend'),
       skills: [
         { name: 'TypeScript', level: 100, color: 'from-blue-500 to-blue-700' },
         { name: 'Angular', level: 95, color: 'from-red-500 to-red-700' },
@@ -15,7 +18,7 @@ export function SkillsSection() {
       ]
     },
     {
-      title: 'Backend',
+      title: t('skills.categories.backend'),
       skills: [
         { name: 'C# / .NET Core', level: 95, color: 'from-purple-500 to-purple-700' },
         { name: 'SQL Server', level: 94, color: 'from-red-400 to-red-600' },
@@ -24,7 +27,7 @@ export function SkillsSection() {
       ]
     },
     {
-      title: 'Cloud & IoT',
+      title: t('skills.categories.cloudIot'),
       skills: [
         { name: 'Azure', level: 93, color: 'from-blue-600 to-blue-800' },
         { name: 'Azure Functions', level: 93, color: 'from-cyan-500 to-cyan-700' },
@@ -44,10 +47,10 @@ export function SkillsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl text-white mb-6">Skills & Technologies</h2>
+          <h2 className="text-4xl md:text-5xl text-white mb-6">{t('skills.heading')}</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto"></div>
           <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-            Here are the technologies and tools I use to bring ideas to life
+            {t('skills.description')}
           </p>
         </motion.div>
         
@@ -110,7 +113,7 @@ export function SkillsSection() {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <h3 className="text-2xl text-white mb-8">Technologies I Work With</h3>
+          <h3 className="text-2xl text-white mb-8">{t('skills.technologiesHeading')}</h3>
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
             {[
               'Angular', 'React', 'TypeScript', 'C#', '.NET Core', 'Azure',

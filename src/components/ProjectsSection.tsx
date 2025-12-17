@@ -5,12 +5,17 @@ import { Card } from './ui/card'
 import { Button } from './ui/button'
 import { ExternalLink, Github } from 'lucide-react'
 import { ImageWithFallback } from './figma/ImageWithFallback'
+import { useLanguage } from '../hooks/useLanguage'
+import { getTranslations } from '../i18n'
 
 export function ProjectsSection() {
+  const { t, language } = useLanguage()
+  const translations = getTranslations(language)
+
   const projects = [
     {
-      title: 'La Colonia - AI Virtual Assistant',
-      description: 'An intelligent AI assistant that handles calls and chat for an insurance company. Capable of answering questions about services, specialties, scheduling appointments, and sending automated notifications to clients.',
+      title: translations.projects.items[0].title,
+      description: translations.projects.items[0].description,
       image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&h=400&fit=crop',
       technologies: ['Retell AI', 'N8N', 'Square', 'Semantic Kernel'],
       github: '#',
@@ -18,8 +23,8 @@ export function ProjectsSection() {
       featured: true
     },
     {
-      title: 'Smart Greenhouse IoT System',
-      description: 'Complete IoT solution for greenhouse monitoring and control. Real-time sensor data visualization through Angular PWA, connecting physical sensors with Azure cloud infrastructure for farm management.',
+      title: translations.projects.items[1].title,
+      description: translations.projects.items[1].description,
       image: 'https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=600&h=400&fit=crop',
       technologies: ['Node-RED', 'Azure IoT Hub', 'Angular', 'SignalR', 'Cosmos DB', 'Azure Functions'],
       github: '#',
@@ -27,8 +32,8 @@ export function ProjectsSection() {
       featured: true
     },
     {
-      title: 'Task Budget Management System',
-      description: 'Enterprise system that manages budget allocation to tasks with real-time compliance monitoring. Automatically links financial execution with physical indicators, providing meaningful insights on project progress.',
+      title: translations.projects.items[2].title,
+      description: translations.projects.items[2].description,
       image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop',
       technologies: ['Angular', 'Web API .NET Core', 'SQL Server', 'DevExtreme'],
       github: '#',
@@ -36,8 +41,8 @@ export function ProjectsSection() {
       featured: false
     },
     {
-      title: 'Restaurant Management Platform',
-      description: 'Complete management solution for restaurants including order management, inventory control, real-time kitchen display, and customer analytics with Azure cloud integration.',
+      title: translations.projects.items[3].title,
+      description: translations.projects.items[3].description,
       image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop',
       technologies: ['Angular', '.NET Core', 'Azure', 'SQL Server', 'SignalR'],
       github: '#',
@@ -45,8 +50,8 @@ export function ProjectsSection() {
       featured: false
     },
     {
-      title: 'Small Business Sales System',
-      description: 'Modern sales and inventory management system for small businesses. Features include real-time reporting, customer management, invoice generation, and cloud synchronization with Azure services.',
+      title: translations.projects.items[4].title,
+      description: translations.projects.items[4].description,
       image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
       technologies: ['React', '.NET Core', 'Azure Functions', 'SQL Server', 'TypeScript'],
       github: '#',
@@ -68,10 +73,10 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl text-white mb-6">Featured Projects</h2>
+          <h2 className="text-4xl md:text-5xl text-white mb-6">{t('projects.heading')}</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-emerald-400 to-blue-400 mx-auto"></div>
           <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-            Real-world solutions that combine Full Stack development, Azure cloud services, and IoT technologies
+            {t('projects.description')}
           </p>
         </motion.div>
 
@@ -144,7 +149,7 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="mb-8"
         >
-          <h3 className="text-2xl text-white text-center mb-8">Other Projects</h3>
+          <h3 className="text-2xl text-white text-center mb-8">{t('projects.otherHeading')}</h3>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -210,11 +215,11 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Button 
-            variant="outline" 
+          <Button
+            variant="outline"
             className="border-emerald-500/50 text-emerald-400 hover:bg-emerald-500/10 px-8 py-3"
           >
-            View All Projects
+            {t('projects.viewAll')}
           </Button>
         </motion.div>
       </div>

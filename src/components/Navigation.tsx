@@ -2,9 +2,12 @@
 
 import { motion } from 'motion/react'
 import { useState, useEffect } from 'react'
+import { useLanguage } from '../hooks/useLanguage'
+import { LanguageSwitcher } from './LanguageSwitcher'
 
 export function Navigation() {
   const [scrolled, setScrolled] = useState(false)
+  const { t } = useLanguage()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,11 +51,12 @@ export function Navigation() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 * index }}
                 onClick={() => scrollToSection(item)}
-                className="text-gray-300 hover:text-white transition-colors duration-200 capitalize"
+                className="text-gray-300 hover:text-white transition-colors duration-200"
               >
-                {item}
+                {t(`navigation.${item}`)}
               </motion.button>
             ))}
+            <LanguageSwitcher />
           </div>
         </div>
       </div>

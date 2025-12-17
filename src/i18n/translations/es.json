@@ -1,0 +1,111 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "about": "Acerca",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Erislandy Cabrales Reyes",
+    "title": "Tech Lead | Desarrollador Full Stack",
+    "specialization": "Soluciones Azure & IoT",
+    "description": "Transformando ideas en soluciones digitales robustas con más de 8 años de experiencia en el ecosistema Microsoft. Liderando equipos y arquitectando soluciones Full Stack con .NET, Azure, Angular y tecnologías IoT.",
+    "cta": "Ver Mi Trabajo"
+  },
+  "about": {
+    "heading": "Acerca de Mí",
+    "subheading": "Transformando ideas en soluciones digitales robustas",
+    "paragraph1": "Tech Lead y Desarrollador Full Stack con más de 8 años transformando ideas en soluciones digitales robustas. Lidero un equipo de desarrollo especializado en el ecosistema Microsoft, donde combino mi experiencia técnica con la gestión directa de clientes para entregar proyectos que generan valor real.",
+    "paragraph2": "Mi día a día incluye dirigir equipos de desarrollo desde la concepción hasta el despliegue, reunirme con clientes para traducir necesidades de negocio en soluciones técnicas, desarrollar arquitecturas Full Stack con .NET, Azure y frameworks modernos de frontend, y diseñar e implementar soluciones IoT que conectan el mundo físico con el digital.",
+    "traits": [
+      "Arquitecto de Soluciones",
+      "Líder de Equipo",
+      "Especialista IoT",
+      "Enfocado en el Cliente"
+    ],
+    "features": [
+      {
+        "title": "Maestría Full Stack",
+        "description": "Experto en .NET, Angular, React y el ecosistema Azure para construir soluciones empresariales escalables."
+      },
+      {
+        "title": "Innovación IoT",
+        "description": "Diseñando e implementando soluciones IoT que conectan el mundo físico con el digital."
+      },
+      {
+        "title": "Liderazgo de Equipo",
+        "description": "Liderando equipos de desarrollo y gestionando relaciones directas con clientes para entregar valor real."
+      },
+      {
+        "title": "Enfoque en Negocios",
+        "description": "Entendiendo tanto el código como el negocio para crear soluciones que resuelven problemas reales."
+      }
+    ]
+  },
+  "skills": {
+    "heading": "Habilidades y Tecnologías",
+    "description": "Estas son las tecnologías y herramientas que uso para dar vida a las ideas",
+    "technologiesHeading": "Tecnologías con las que Trabajo",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "cloudIot": "Cloud & IoT"
+    }
+  },
+  "projects": {
+    "heading": "Proyectos Destacados",
+    "description": "Soluciones del mundo real que combinan desarrollo Full Stack, servicios en la nube de Azure y tecnologías IoT",
+    "otherHeading": "Otros Proyectos",
+    "viewAll": "Ver Todos los Proyectos",
+    "items": [
+      {
+        "title": "La Colonia - Asistente Virtual IA",
+        "description": "Un asistente de inteligencia artificial que recibe llamadas y chat para una aseguradora. Capaz de responder preguntas sobre servicios, especialidades, agendar citas y enviar notificaciones automatizadas a clientes."
+      },
+      {
+        "title": "Sistema IoT de Invernaderos Inteligentes",
+        "description": "Solución IoT completa para monitoreo y control de invernaderos. Visualización de datos de sensores en tiempo real a través de PWA Angular, conectando sensores físicos con infraestructura en la nube de Azure para gestión de granjas."
+      },
+      {
+        "title": "Sistema de Administración y Presupuesto de Tareas",
+        "description": "Sistema empresarial que gestiona la asignación de presupuesto a tareas con monitoreo de cumplimiento en tiempo real. Vincula automáticamente la ejecución financiera con indicadores físicos, proporcionando información significativa sobre el progreso del proyecto."
+      },
+      {
+        "title": "Plataforma de Gestión para Restaurantes",
+        "description": "Solución completa de gestión para restaurantes que incluye gestión de pedidos, control de inventario, pantalla de cocina en tiempo real y análisis de clientes con integración en la nube de Azure."
+      },
+      {
+        "title": "Sistema de Ventas para Pequeños Negocios",
+        "description": "Sistema moderno de gestión de ventas e inventario para pequeños negocios. Incluye reportes en tiempo real, gestión de clientes, generación de facturas y sincronización en la nube con servicios de Azure."
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Ponte en Contacto",
+    "description": "Siempre interesado en proyectos desafiantes y oportunidades de colaboración. ¡Hablemos sobre cómo podemos crear algo grandioso juntos!",
+    "formHeading": "Envíame un mensaje",
+    "connectHeading": "Conectemos",
+    "connectDescription": "¿Trabajas en un proyecto desafiante o buscas colaboración? Ya sea que necesites soluciones Azure, implementaciones IoT o desarrollo Full Stack, me encantaría discutir cómo podemos trabajar juntos.",
+    "followMe": "Sígueme",
+    "labels": {
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo Electrónico",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "phone": "Teléfono",
+      "location": "Ubicación"
+    },
+    "placeholders": {
+      "firstName": "Tu nombre",
+      "lastName": "Tu apellido",
+      "email": "tu.correo@ejemplo.com",
+      "subject": "Discusión de proyecto",
+      "message": "Cuéntame sobre tu proyecto..."
+    },
+    "button": "Enviar Mensaje",
+    "footer": "© 2025 Erislandy Cabrales Reyes."
+  }
+}

@@ -3,8 +3,11 @@
 import { motion } from 'motion/react'
 import { Button } from './ui/button'
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react'
+import { useLanguage } from '../hooks/useLanguage'
 
 export function HeroSection() {
+  const { t } = useLanguage()
+
   const scrollToProjects = () => {
     const element = document.getElementById('projects')
     if (element) {
@@ -51,18 +54,18 @@ export function HeroSection() {
             transition={{ delay: 0.2 }}
             className="text-emerald-400 text-lg tracking-wider"
           >
-            Hello, I'm
+            {t('hero.greeting')}
           </motion.p>
-          
+
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
             className="text-5xl md:text-7xl text-white mb-6"
           >
-            Erislandy Cabrales Reyes
+            {t('hero.name')}
           </motion.h1>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -71,22 +74,21 @@ export function HeroSection() {
           >
             I'm a{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-400">
-              Tech Lead | Full Stack Developer
+              {t('hero.title')}
             </span>
             {' '}specializing in{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-              Azure & IoT Solutions
+              {t('hero.specialization')}
             </span>
           </motion.div>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8 }}
             className="text-gray-400 text-lg max-w-2xl mx-auto mb-8"
           >
-            Transforming ideas into robust digital solutions with 8+ years of experience in the Microsoft ecosystem.
-            Leading teams and architecting Full Stack solutions with .NET, Azure, Angular, and IoT technologies.
+            {t('hero.description')}
           </motion.p>
           
           <motion.div
@@ -99,7 +101,7 @@ export function HeroSection() {
               onClick={scrollToProjects}
               className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
             >
-              View My Work
+              {t('hero.cta')}
             </Button>
             
             <div className="flex items-center space-x-4">

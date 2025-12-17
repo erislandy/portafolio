@@ -6,24 +6,27 @@ import { Button } from './ui/button'
 import { Input } from './ui/input'
 import { Textarea } from './ui/textarea'
 import { Github, Linkedin, Mail, Twitter, MapPin, Phone } from 'lucide-react'
+import { useLanguage } from '../hooks/useLanguage'
 
 export function ContactSection() {
+  const { t } = useLanguage()
+
   const contactInfo = [
     {
       icon: Mail,
-      label: 'Email',
+      label: t('contact.labels.email'),
       value: 'erislandy.cabrales@gmail.com',
       href: 'mailto:erislandy.cabrales@gmail.com'
     },
     {
       icon: Phone,
-      label: 'Phone',
+      label: t('contact.labels.phone'),
       value: '+505 89345706',
       href: 'tel:+50589345706'
     },
     {
       icon: MapPin,
-      label: 'Location',
+      label: t('contact.labels.location'),
       value: 'Estelí, Nicaragua',
       href: '#'
     }
@@ -45,11 +48,10 @@ export function ContactSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl text-white mb-6">Get In Touch</h2>
+          <h2 className="text-4xl md:text-5xl text-white mb-6">{t('contact.heading')}</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto"></div>
           <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-            Always interested in challenging projects and collaboration opportunities.
-            Let's discuss how we can create something great together!
+            {t('contact.description')}
           </p>
         </motion.div>
 
@@ -62,53 +64,53 @@ export function ContactSection() {
             viewport={{ once: true }}
           >
             <Card className="p-8 bg-gray-900/50 border-white/10">
-              <h3 className="text-2xl text-white mb-6">Send me a message</h3>
+              <h3 className="text-2xl text-white mb-6">{t('contact.formHeading')}</h3>
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <label className="text-gray-300 text-sm mb-2 block">First Name</label>
+                    <label className="text-gray-300 text-sm mb-2 block">{t('contact.labels.firstName')}</label>
                     <Input
-                      placeholder="Your first name"
+                      placeholder={t('contact.placeholders.firstName')}
                       className="bg-black/50 border-white/20 text-white placeholder:text-gray-500 focus:border-emerald-500"
                     />
                   </div>
                   <div>
-                    <label className="text-gray-300 text-sm mb-2 block">Last Name</label>
+                    <label className="text-gray-300 text-sm mb-2 block">{t('contact.labels.lastName')}</label>
                     <Input
-                      placeholder="Your last name"
+                      placeholder={t('contact.placeholders.lastName')}
                       className="bg-black/50 border-white/20 text-white placeholder:text-gray-500 focus:border-emerald-500"
                     />
                   </div>
                 </div>
-                
+
                 <div>
-                  <label className="text-gray-300 text-sm mb-2 block">Email</label>
+                  <label className="text-gray-300 text-sm mb-2 block">{t('contact.labels.email')}</label>
                   <Input
                     type="email"
-                    placeholder="your.email@example.com"
+                    placeholder={t('contact.placeholders.email')}
                     className="bg-black/50 border-white/20 text-white placeholder:text-gray-500 focus:border-emerald-500"
                   />
                 </div>
-                
+
                 <div>
-                  <label className="text-gray-300 text-sm mb-2 block">Subject</label>
+                  <label className="text-gray-300 text-sm mb-2 block">{t('contact.labels.subject')}</label>
                   <Input
-                    placeholder="Project discussion"
+                    placeholder={t('contact.placeholders.subject')}
                     className="bg-black/50 border-white/20 text-white placeholder:text-gray-500 focus:border-emerald-500"
                   />
                 </div>
-                
+
                 <div>
-                  <label className="text-gray-300 text-sm mb-2 block">Message</label>
+                  <label className="text-gray-300 text-sm mb-2 block">{t('contact.labels.message')}</label>
                   <Textarea
-                    placeholder="Tell me about your project..."
+                    placeholder={t('contact.placeholders.message')}
                     rows={5}
                     className="bg-black/50 border-white/20 text-white placeholder:text-gray-500 focus:border-emerald-500 resize-none"
                   />
                 </div>
-                
+
                 <Button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-3">
-                  Send Message
+                  {t('contact.button')}
                 </Button>
               </form>
             </Card>
@@ -123,11 +125,9 @@ export function ContactSection() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl text-white mb-6">Let's connect</h3>
+              <h3 className="text-2xl text-white mb-6">{t('contact.connectHeading')}</h3>
               <p className="text-gray-400 leading-relaxed mb-8">
-                Working on a challenging project or looking for collaboration?
-                Whether you need Azure solutions, IoT implementations, or Full Stack development,
-                I'd love to discuss how we can work together.
+                {t('contact.connectDescription')}
               </p>
             </div>
 
@@ -154,7 +154,7 @@ export function ContactSection() {
             </div>
 
             <div className="pt-8">
-              <h4 className="text-white text-lg mb-4">Follow me</h4>
+              <h4 className="text-white text-lg mb-4">{t('contact.followMe')}</h4>
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
                   <motion.a
@@ -185,7 +185,7 @@ export function ContactSection() {
           className="border-t border-white/10 mt-16 pt-8 text-center"
         >
           <p className="text-gray-400">
-            © 2025 Erislandy Cabrales Reyes.
+            {t('contact.footer')}
           </p>
         </motion.div>
       </div>

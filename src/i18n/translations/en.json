@@ -1,0 +1,111 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Erislandy Cabrales Reyes",
+    "title": "Tech Lead | Full Stack Developer",
+    "specialization": "Azure & IoT Solutions",
+    "description": "Transforming ideas into robust digital solutions with 8+ years of experience in the Microsoft ecosystem. Leading teams and architecting Full Stack solutions with .NET, Azure, Angular, and IoT technologies.",
+    "cta": "View My Work"
+  },
+  "about": {
+    "heading": "About Me",
+    "subheading": "Transforming ideas into robust digital solutions",
+    "paragraph1": "Tech Lead and Full Stack Developer with more than 8 years transforming ideas into robust digital solutions. I lead a development team specialized in the Microsoft ecosystem, where I combine my technical expertise with direct client management to deliver projects that generate real value.",
+    "paragraph2": "My day-to-day includes directing development teams from conception to deployment, meeting with clients to translate business needs into technical solutions, developing Full Stack architectures with .NET, Azure and modern frontend frameworks, and designing and implementing IoT solutions that connect the physical world with the digital.",
+    "traits": [
+      "Solution Architect",
+      "Team Leader",
+      "IoT Specialist",
+      "Client-Focused"
+    ],
+    "features": [
+      {
+        "title": "Full Stack Mastery",
+        "description": "Expert in .NET, Angular, React, and Azure ecosystem for building scalable enterprise solutions."
+      },
+      {
+        "title": "IoT Innovation",
+        "description": "Designing and implementing IoT solutions that bridge the physical and digital worlds."
+      },
+      {
+        "title": "Team Leadership",
+        "description": "Leading development teams and managing direct client relationships to deliver real value."
+      },
+      {
+        "title": "Business Focus",
+        "description": "Understanding both code and business to create solutions that solve real problems."
+      }
+    ]
+  },
+  "skills": {
+    "heading": "Skills & Technologies",
+    "description": "Here are the technologies and tools I use to bring ideas to life",
+    "technologiesHeading": "Technologies I Work With",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "cloudIot": "Cloud & IoT"
+    }
+  },
+  "projects": {
+    "heading": "Featured Projects",
+    "description": "Real-world solutions that combine Full Stack development, Azure cloud services, and IoT technologies",
+    "otherHeading": "Other Projects",
+    "viewAll": "View All Projects",
+    "items": [
+      {
+        "title": "La Colonia - AI Virtual Assistant",
+        "description": "An intelligent AI assistant that handles calls and chat for an insurance company. Capable of answering questions about services, specialties, scheduling appointments, and sending automated notifications to clients."
+      },
+      {
+        "title": "Smart Greenhouse IoT System",
+        "description": "Complete IoT solution for greenhouse monitoring and control. Real-time sensor data visualization through Angular PWA, connecting physical sensors with Azure cloud infrastructure for farm management."
+      },
+      {
+        "title": "Task Budget Management System",
+        "description": "Enterprise system that manages budget allocation to tasks with real-time compliance monitoring. Automatically links financial execution with physical indicators, providing meaningful insights on project progress."
+      },
+      {
+        "title": "Restaurant Management Platform",
+        "description": "Complete management solution for restaurants including order management, inventory control, real-time kitchen display, and customer analytics with Azure cloud integration."
+      },
+      {
+        "title": "Small Business Sales System",
+        "description": "Modern sales and inventory management system for small businesses. Features include real-time reporting, customer management, invoice generation, and cloud synchronization with Azure services."
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Get In Touch",
+    "description": "Always interested in challenging projects and collaboration opportunities. Let's discuss how we can create something great together!",
+    "formHeading": "Send me a message",
+    "connectHeading": "Let's connect",
+    "connectDescription": "Working on a challenging project or looking for collaboration? Whether you need Azure solutions, IoT implementations, or Full Stack development, I'd love to discuss how we can work together.",
+    "followMe": "Follow me",
+    "labels": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "phone": "Phone",
+      "location": "Location"
+    },
+    "placeholders": {
+      "firstName": "Your first name",
+      "lastName": "Your last name",
+      "email": "your.email@example.com",
+      "subject": "Project discussion",
+      "message": "Tell me about your project..."
+    },
+    "button": "Send Message",
+    "footer": "© 2025 Erislandy Cabrales Reyes."
+  }
+}
